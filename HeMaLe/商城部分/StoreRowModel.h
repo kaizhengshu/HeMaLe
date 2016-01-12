@@ -10,4 +10,6 @@
 
 @interface StoreRowModel : NSObject
 
+@property (nonatomic,strong)NSArray *rowData;
+
 @end
