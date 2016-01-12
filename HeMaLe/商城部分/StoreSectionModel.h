@@ -10,4 +10,8 @@
 
 @interface StoreSectionModel : NSObject
 
+@property (nonatomic,strong) NSArray *sectionData;
+
+@property (nonatomic) BOOL isExpand;
+
 @end

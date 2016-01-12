@@ -91,6 +91,11 @@
 		45B438841C44A29A00C86DA0 /* ShareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B438821C44A29A00C86DA0 /* ShareTableViewCell.m */; };
 		45B438851C44A29A00C86DA0 /* ShareTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B438831C44A29A00C86DA0 /* ShareTableViewCell.xib */; };
 		45B438881C44A59C00C86DA0 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B438871C44A59C00C86DA0 /* ShareModel.m */; };
+		45B4388C1C44D14200C86DA0 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B4388A1C44D14200C86DA0 /* VideoTableViewCell.m */; };
+		45B4388D1C44D14200C86DA0 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B4388B1C44D14200C86DA0 /* VideoTableViewCell.xib */; };
+		45B438901C44D51C00C86DA0 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B4388F1C44D51C00C86DA0 /* VideoModel.m */; };
+		45B438931C44E25A00C86DA0 /* StoreSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B438921C44E25A00C86DA0 /* StoreSectionModel.m */; };
+		45B438961C44E3B800C86DA0 /* StoreRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B438951C44E3B800C86DA0 /* StoreRowModel.m */; };
 		45BF63331C43478F0045A8DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF63321C43478F0045A8DA /* main.m */; };
 		45BF63361C43478F0045A8DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF63351C43478F0045A8DA /* AppDelegate.m */; };
 		45BF63391C4347900045A8DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF63381C43478F0045A8DA /* ViewController.m */; };
@@ -227,6 +232,15 @@
 		45B438831C44A29A00C86DA0 /* ShareTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareTableViewCell.xib; sourceTree = "<group>"; };
 		45B438861C44A59C00C86DA0 /* ShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
 		45B438871C44A59C00C86DA0 /* ShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
+		45B438891C44D14200C86DA0 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
+		45B4388A1C44D14200C86DA0 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		45B4388B1C44D14200C86DA0 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
+		45B4388E1C44D51C00C86DA0 /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		45B4388F1C44D51C00C86DA0 /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		45B438911C44E25A00C86DA0 /* StoreSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreSectionModel.h; sourceTree = "<group>"; };
+		45B438921C44E25A00C86DA0 /* StoreSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreSectionModel.m; sourceTree = "<group>"; };
+		45B438941C44E3B800C86DA0 /* StoreRowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreRowModel.h; sourceTree = "<group>"; };
+		45B438951C44E3B800C86DA0 /* StoreRowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreRowModel.m; sourceTree = "<group>"; };
 		45BF632E1C43478F0045A8DA /* HeMaLe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeMaLe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BF63321C43478F0045A8DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45BF63341C43478F0045A8DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -337,6 +351,8 @@
 		459BAD4D1C434BB1000E9396 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				459BAD5A1C434C5B000E9396 /* VideoViewController.h */,
+				459BAD5B1C434C5B000E9396 /* VideoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -344,8 +360,9 @@
 		459BAD4E1C434BBA000E9396 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				459BAD5A1C434C5B000E9396 /* VideoViewController.h */,
-				459BAD5B1C434C5B000E9396 /* VideoViewController.m */,
+				45B438891C44D14200C86DA0 /* VideoTableViewCell.h */,
+				45B4388A1C44D14200C86DA0 /* VideoTableViewCell.m */,
+				45B4388B1C44D14200C86DA0 /* VideoTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -353,6 +370,8 @@
 		459BAD4F1C434BBF000E9396 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45B4388E1C44D51C00C86DA0 /* VideoModel.h */,
+				45B4388F1C44D51C00C86DA0 /* VideoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -414,6 +433,10 @@
 		459BAD561C434C38000E9396 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45B438911C44E25A00C86DA0 /* StoreSectionModel.h */,
+				45B438921C44E25A00C86DA0 /* StoreSectionModel.m */,
+				45B438941C44E3B800C86DA0 /* StoreRowModel.h */,
+				45B438951C44E3B800C86DA0 /* StoreRowModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -994,6 +1017,7 @@
 				45B438301C43569200C86DA0 /* ceshi2.png in Resources */,
 				45B438381C43569200C86DA0 /* dongtaikaiqi.png in Resources */,
 				45B4384D1C43569200C86DA0 /* tianjiamayou.png in Resources */,
+				45B4388D1C44D14200C86DA0 /* VideoTableViewCell.xib in Resources */,
 				45B438361C43569200C86DA0 /* dongtaiguanbi.png in Resources */,
 				45B4385B1C43569200C86DA0 /* yindaoye3.png in Resources */,
 				45B438401C43569200C86DA0 /* liangxiadaohang1.png in Resources */,
@@ -1077,14 +1101,18 @@
 				459BAD661C434CE4000E9396 /* ShareViewController.m in Sources */,
 				45BF63911C434A8F0045A8DA /* GuideViewController.m in Sources */,
 				45BF63391C4347900045A8DA /* ViewController.m in Sources */,
+				45B4388C1C44D14200C86DA0 /* VideoTableViewCell.m in Sources */,
 				459BAD5C1C434C5B000E9396 /* VideoViewController.m in Sources */,
 				45BF63361C43478F0045A8DA /* AppDelegate.m in Sources */,
 				45BF63841C4349DA0045A8DA /* JYTextField.m in Sources */,
 				45BF638E1C434A3F0045A8DA /* RegisterViewController.m in Sources */,
 				45BF637F1C4349C20045A8DA /* MainTabbarViewController.m in Sources */,
 				45BF63331C43478F0045A8DA /* main.m in Sources */,
+				45B438961C44E3B800C86DA0 /* StoreRowModel.m in Sources */,
 				45B438881C44A59C00C86DA0 /* ShareModel.m in Sources */,
+				45B438901C44D51C00C86DA0 /* VideoModel.m in Sources */,
 				459BAD691C434D0C000E9396 /* CLBlurtView.m in Sources */,
+				45B438931C44E25A00C86DA0 /* StoreSectionModel.m in Sources */,
 				459BAD4C1C434BAD000E9396 /* PersonalCenterViewController.m in Sources */,
 				45B438711C4399F500C86DA0 /* NewsModel.m in Sources */,
 				45B4386C1C435DC000C86DA0 /* PersonallCenterCell.m in Sources */,

@@ -70,7 +70,7 @@
     self.advertScroll.showsHorizontalScrollIndicator = NO;
     self.advertScroll.showsVerticalScrollIndicator = NO;
     
-    [self.view addSubview:self.advertScroll];
+//    [self.view addSubview:self.advertScroll];
     
 //    [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(timer:) userInfo:self.advertScroll repeats:YES];
     
@@ -78,10 +78,10 @@
     
       //tableview视图
                         
-    self.newsTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 200, kScreenWidth, kScreenHeight-200) style:UITableViewStylePlain];
+    self.newsTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.newsTableView.delegate = self;
     self.newsTableView.dataSource = self;
-    
+    self.newsTableView.tableHeaderView = self.advertScroll;
     
       [self.newsTableView  registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     
